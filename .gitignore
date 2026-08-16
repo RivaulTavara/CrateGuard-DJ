@@ -18,13 +18,10 @@ Thumbs.db
 *.tmp
 *.temp
 
-# App-generated runtime data
+# Runtime artifacts
 exports/
 logs/
 tmp_test/
-ig_downloads/
-ig_pro/
-descargas_media/
 QR_Codes/
 
 # Frontend dependencies and build output

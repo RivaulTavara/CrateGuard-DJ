@@ -1,21 +1,26 @@
-# Converter Auto Export
+# CrateGuard
 
-Project for converting media files and exporting them through a local workflow, with a Python backend and a Vite-based frontend UI.
+Proyecto para analizar, convertir y exportar archivos de audio con una interfaz web y un backend local.
 
-## Structure
+## Requisitos
 
-- `converter.py` and related scripts: backend conversion logic
-- `GUI/`: frontend application
-- `exports/`: generated export output
-- `logs/`: runtime logs
-- `config.json`: local configuration
+- Python
+- Node.js + npm
+- VS Code
 
-## Requirements
+## Arranque con los tasks del workspace
 
-- Python 3.x
-- Node.js and npm for the GUI
+En VS Code, ejecuta estos dos tasks:
 
-## Run locally
+1. CrateGuard Backend: Server
+2. CrateGuard UI: Dev Server
+
+Esto levanta:
+
+- Backend: http://127.0.0.1:8765
+- Frontend: http://localhost:5173/
+
+## Arranque manual
 
 ### Backend
 
@@ -31,6 +36,12 @@ npm install
 npm run dev
 ```
 
-## Notes
+## Uso
 
-This repository is configured to ignore local virtual environments, generated outputs, and editor metadata so it stays clean for GitHub.
+- Abre la UI en http://localhost:5173/
+- Usa la URL del backend: http://127.0.0.1:8765
+- Si necesitas pasar rutas locales, copia la ruta completa del archivo o playlist
+
+## Nota
+
+La UI es una app Vite y el backend es un servidor local Python. Los archivos generados, temporales y dependencias locales quedan ignorados para que el repositorio de GitHub quede limpio.
