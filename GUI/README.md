@@ -1,36 +1,34 @@
 # CrateGuard UI
 
-Dark-mode React dashboard for CrateGuard, focused on real-time playlist analysis.
+Interfaz web minimalista para CrateGuard.
 
-## Modules
-
-- Deep Scan
-- Safe Export (-12 LUFS)
-- Single Convert
-- Integrity Check
-- Cover Tools
-- USB Serato Clone
-
-## Run the UI
+## Ejecutar
 
 ```bash
 npm install
 npm run dev
 ```
 
-## Start the Python scan server
+## Backend
 
-From the project root (one level up from this GUI folder):
+Desde la raíz del proyecto:
 
 ```bash
-python crateguard_server.py
+python converter.py --server
 ```
 
-Then set the Backend URL in the UI to `http://127.0.0.1:8765` and provide a `.m3u8` path.
+Luego en la UI usa la URL del backend:
 
-Note: browsers cannot read full local file paths from file inputs. Paste full paths when needed.
+```text
+http://127.0.0.1:8765
+```
 
-## Notes
+## Uso
 
-- Demo Mode can be used without the backend to preview the interface.
-- The backend streams SSE events to populate the table in real time.
+- Pega la ruta completa del archivo `.m3u8`
+- La UI muestra el análisis en tiempo real
+- Puedes usar el modo demo para probar la interfaz sin backend
+
+## Nota
+
+Los navegadores no pueden leer rutas locales completas desde un input de archivo, por eso conviene pegar la ruta completa manualmente.
