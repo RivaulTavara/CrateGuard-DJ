@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+**/__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+.venv/
+venv/
+env/
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+*.temp
+
+# App-generated runtime data
+exports/
+logs/
+tmp_test/
+ig_downloads/
+ig_pro/
+descargas_media/
+QR_Codes/
+
+# Frontend dependencies and build output
+GUI/node_modules/
+GUI/dist/
+GUI/.vite/
+
+# Local environment / secrets
+.env
+.env.*

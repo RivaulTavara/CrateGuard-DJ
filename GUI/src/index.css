@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap");
+
+:root {
+  color-scheme: dark;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+
+  --font-orbitron: "Orbitron", sans-serif;
+
+  --bg-0: #000000;
+  --bg-1: #050507;
+  --bg-2: #0a0a0c;
+  --panel: #0a0a0c;
+  --panel-2: #070709;
+  --ink-0: #f4efff;
+  --ink-1: #c9bedf;
+  --ink-2: #8b7ca6;
+  --accent-main: #bc13fe;
+  --accent: var(--accent-main);
+  --accent-2: #ff4fd8;
+  --accent-rgb: 188, 19, 254;
+  --danger: #ff2fb1;
+  --warning: #ffb347;
+  --ok: #9c6bff;
+  --line: #2a2a35;
+  --glow: 0 0 26px rgba(188, 19, 254, 0.35);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: radial-gradient(circle at 18% 12%, rgba(188, 19, 254, 0.14) 0%, transparent 48%),
+    var(--bg-0);
+  color: var(--ink-0);
+}
+
+button,
+input {
+  font-family: inherit;
+}
